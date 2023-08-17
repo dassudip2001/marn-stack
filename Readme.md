@@ -20,4 +20,7 @@ capable with older version of browser
 
 <!-- how to remove console log -->
 
-- bable is used to
+- bable is used to and install cmd
+  npm i babel-plugin-transform-remove-console --save-dev
+
+React.CreateElement => object and convart the html
