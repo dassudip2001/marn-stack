@@ -4,7 +4,8 @@
   "description": "",
   "main": "App.js",
   "scripts": {
-    "dev": "npx  parcel index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Sudip Das",
   "license": "ISC",
@@ -20,6 +21,6 @@
     "react-dom": "^18.2.0"
   },
   "browserslist": [
-    "al last 10 chrome version"
+    "at last 2 chrome version"
   ]
 }

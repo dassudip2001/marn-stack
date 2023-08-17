@@ -4,6 +4,7 @@ const Body = () => {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("rahul");
   const [data, setData] = useState(null);
+  // fetch data from api
   useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/todos/1")
