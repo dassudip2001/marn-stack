@@ -24,3 +24,15 @@ capable with older version of browser
   npm i babel-plugin-transform-remove-console --save-dev
 
 React.CreateElement => object and convart the html
+
+<!-- what is different between html and jsx -->
+
+# there is two type of component
+
+- class base component
+- function base component -- in newer version function base component used
+- function component used fast later in capital letter
+
+# Different between react element and react functional component
+
+- react element is jsx component
