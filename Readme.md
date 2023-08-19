@@ -1,8 +1,8 @@
-<!-- What do yo mean by polyfill -->
+# What do yo mean by polyfill
 
 - in older version browser can not support let cont then polyfill can transfer the own code
 
-<!-- what is parcel -->
+# what is parcel
 
 create a server
 HMR
@@ -14,11 +14,11 @@ caching with development
 image optimization
 capable with older version of browser
 
-<!-- tree shaking  -->
+# tree shaking  
 
 - Removing un wanted code
 
-<!-- how to remove console log -->
+# how to remove console log 
 
 - bable is used to and install cmd
   npm i babel-plugin-transform-remove-console --save-dev
