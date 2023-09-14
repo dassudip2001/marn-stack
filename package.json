@@ -4,6 +4,7 @@
   "description": "",
   "main": "App.js",
   "scripts": {
+    "test": "jest",
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
