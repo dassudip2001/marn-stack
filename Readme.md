@@ -36,3 +36,27 @@ React.CreateElement => object and convart the html
 # Different between react element and react functional component
 
 - react element is jsx component
+
+# testing React Application
+
+- install jest
+- npm i -D jest
+- install React Testing Libratory
+- npx jest --init
+- npm i jest-environment-jsdom
+
+# jest babel config
+
+- npm i --save-dev babel-jest @babel/core @babel/preset-env
+
+```
+    https://jestjs.io/docs/getting-started
+```
+
+- babel.config.js
+
+```
+    module.exports = {
+      presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+    };
+```
