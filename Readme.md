@@ -60,3 +60,5 @@ React.CreateElement => object and convart the html
       presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
     };
 ```
+
+- npm i -D @babel/preset-react
