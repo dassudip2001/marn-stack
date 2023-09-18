@@ -27,6 +27,8 @@ React.CreateElement => object and convart the html
 
 <!-- what is different between html and jsx -->
 
+# class 4
+
 # there is two type of component
 
 - class base component
