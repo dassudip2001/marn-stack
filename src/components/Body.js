@@ -1,27 +1,43 @@
 import React, { useState, useEffect } from "react";
+import Create from "./Create";
 import axios from "axios";
 const Body = () => {
-  const [count, setCount] = useState(0);
-  const [name, setName] = useState("rahul");
-  const [data, setData] = useState(null);
-  // fetch data from api
+  const [loading, setLoading] = useState(false);
+  const URI = "'https://jsonplaceholder.typicode.com/todos";
+  const [data, setData] = useState([]);
+
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/todos/1")
-      .then((res) => {
-        setData(res.data);
-      })
-      .catch((error) => {
-        console.log("Error ", error);
-      });
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://jsonplaceholder.typicode.com/todos/"
+        );
+        setData(response.data);
+        console.log(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
   }, []);
   return (
     <>
-      Hello Body
-      <p>{count}</p>
-      <p>{name}</p>
-      <button onClick={() => setCount(count + 1)}>Click Me</button>
-      <button onClick={() => setName("Sudip")}>cheange name</button>
+      <Create />
+      <div className="container">
+        <h1>Todos</h1>
+        {/* {loading ? (
+          <p>Loading...</p>
+        ) : ( */}
+        <ul>
+          {data.map((todo) => (
+            <li key={todo.id}>
+              <strong>{todo.title}</strong>
+              <p>{todo.completed ? "Completed" : "Not Completed"}</p>
+            </li>
+          ))}
+        </ul>
+        {/* // )} */}
+      </div>
     </>
   );
 };
