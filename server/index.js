@@ -3,6 +3,7 @@ const connectDb = require("./src/db/connect");
 const userRouter = require("./src/route/userRoute");
 const productRouter = require("./src/route/productRoute");
 const authM = require("./src/middleware");
+const cors = require("cors");
 // how to import dotenv
 require("dotenv").config();
 const app = express();
@@ -10,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 connectDb();
 const port = 3000;
+app.use(cors());
 app.use("/api/auth", userRouter);
 app.use("/api/product", productRouter);
 
